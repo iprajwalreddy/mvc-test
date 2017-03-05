@@ -14,6 +14,8 @@
 		E64C27681E6C1E34006E54C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C27661E6C1E34006E54C1 /* LaunchScreen.storyboard */; };
 		E64C27731E6C1E34006E54C1 /* mvc_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C27721E6C1E34006E54C1 /* mvc_testTests.swift */; };
 		E64C277E1E6C1E34006E54C1 /* mvc_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C277D1E6C1E34006E54C1 /* mvc_testUITests.swift */; };
+		E64C27911E6C27E9006E54C1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C27901E6C27E9006E54C1 /* Person.swift */; };
+		E64C27931E6C2807006E54C1 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C27921E6C2807006E54C1 /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E64C27791E6C1E34006E54C1 /* mvc-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvc-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C277D1E6C1E34006E54C1 /* mvc_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvc_testUITests.swift; sourceTree = "<group>"; };
 		E64C277F1E6C1E34006E54C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64C27901E6C27E9006E54C1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E64C27921E6C2807006E54C1 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,12 @@
 		E64C275C1E6C1E34006E54C1 /* mvc-test */ = {
 			isa = PBXGroup;
 			children = (
+				E64C278F1E6C1EC5006E54C1 /* Util */,
+				E64C278E1E6C1EBD006E54C1 /* Resources */,
+				E64C278D1E6C1E96006E54C1 /* Model */,
+				E64C278C1E6C1E8E006E54C1 /* View */,
+				E64C278B1E6C1E81006E54C1 /* Controller */,
 				E64C275D1E6C1E34006E54C1 /* AppDelegate.swift */,
-				E64C275F1E6C1E34006E54C1 /* ViewController.swift */,
 				E64C27611E6C1E34006E54C1 /* Main.storyboard */,
 				E64C27641E6C1E34006E54C1 /* Assets.xcassets */,
 				E64C27661E6C1E34006E54C1 /* LaunchScreen.storyboard */,
@@ -123,6 +131,44 @@
 				E64C277F1E6C1E34006E54C1 /* Info.plist */,
 			);
 			path = "mvc-testUITests";
+			sourceTree = "<group>";
+		};
+		E64C278B1E6C1E81006E54C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E64C275F1E6C1E34006E54C1 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E64C278C1E6C1E8E006E54C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E64C27921E6C2807006E54C1 /* RoundedImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E64C278D1E6C1E96006E54C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E64C27901E6C27E9006E54C1 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E64C278E1E6C1EBD006E54C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E64C278F1E6C1EC5006E54C1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C27931E6C2807006E54C1 /* RoundedImageView.swift in Sources */,
 				E64C27601E6C1E34006E54C1 /* ViewController.swift in Sources */,
+				E64C27911E6C27E9006E54C1 /* Person.swift in Sources */,
 				E64C275E1E6C1E34006E54C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
